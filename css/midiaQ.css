@@ -1,0 +1,28 @@
+@media screen and (max-width:1141px){
+
+}
+@media screen and (max-width:767px){
+  .imc p span{
+    display: none;
+  }
+  .sign p .telaMenor{
+    display: block;
+  }
+  .sign p span{
+    display: none;
+  }
+}
+@media screen and (max-width:424px){
+  .head{
+    display: none;
+  }
+  header p{
+    margin: 5% 0;
+  }
+}
+@media screen and (max-width:374px){
+  
+}
+@media screen and (max-width:319px){
+  
+}

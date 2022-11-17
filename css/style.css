@@ -5,88 +5,97 @@
   box-sizing: border-box;
 }
 body{
+  display: flex;
+  flex-flow: row wrap;
   text-align: center;
-  margin: 20px 10%;
-  background-color: #fff1d0;
+  width: 80%;
+  margin: 1em 10%;
+  background-color: #fffddd;
 }
 h1{
   color: #136cb0;
-  font-size: 32px;
+  font-size: clamp(1.5em, 5vw, 2em);
 }
 h2{
   background: #0a69c2;
   color: #fff;
-  font-size: 22px;
-  border-radius: 5px;
-  padding: 5px 0;
+  font-size: clamp(1em, 4vw, 1.4em);
+  border-radius: 0.2em;
+  padding: 0.25em 0;
 }
 .head{
   display: flex;
   flex-flow: row;
 }
 .sign{
-  flex: 45%;
+  flex: 40%;
   margin: 30px 5% 30px 0;
 }
 .sign p{
-  margin: 20px 10px 10px 10px;
+  font-size: clamp(0.5em, 3vw, 1em);
+  margin: 0.6em 10%;
   color: rgb(89, 85, 85);
 }
+.sign p .telaMenor{
+  display: none;
+}
 .imc{
-  flex: 45%;
+  flex: 40%;
   margin: 30px 0 30px 5%;
 }
 .imc p{
-  margin: 20px 10px 10px 10px;
+  margin: 0.6em 10%;
   color: rgb(89, 85, 85);
-}
-.aviso{
-  margin: 5px;
-}
-.dados{
-  display: flex;
-  flex-flow: row wrap;
 }
 header > p{
   margin: 0 10px 10px 10px;
   color: rgb(89, 85, 85);
+}
+.aviso{
+  margin: 5px;
 }
 main{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  height: 350px;
-  margin: 0;
+  height: 21.8em;
+  margin: 0 10%;
 }
 .dados{
-  flex: 100%;
+  position: absolute;
   display: flex;
   flex-flow: row wrap;
-  height: 150px;
+  width: 34em;
+  height: 9em;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  top: 47%;
+}
+.dados div{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+  position: relative;
 }
 .altura{
-  flex: 50%;
-  padding: 0 0 20px 300px;
-}
-.altura p{
-  color: #136cb0;
-  font-size: 14px;
-  margin: 2px;
+  flex: 40%;
+  margin: 0 0 0 10%;
 }
 .peso{
-  flex: 50%;
-  padding: 0 300px 20px 0;
+  flex: 40%;
+  margin: 0 10% 0 0;
 }
-.peso p{
+.altura label, .peso label {
+  position: absolute;
   color: #136cb0;
-  font-size: 14px;
+  font-size: 0.9em;
   margin: 2px;
+  bottom: 100%;
 }
-#a{
+#a, #p{
   width: 150px;
   height: 35px;
   border-radius: 10px;
@@ -94,21 +103,13 @@ main{
   outline: none;
   padding: 0 0 0 5px;
 }
-#p{
-  width: 150px;
-  height: 35px;
-  border-radius: 10px;
-  border: 1px solid #0a69c2;
-  outline: none;
-  padding: 0 0 0 5px;
-}
 #submit{
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: bold;
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  margin: -40px 38px 0 0;
+  margin: -40px 30px 0 0;
   color: #fff;
   background: #01519b;
   border: none;
@@ -118,12 +119,12 @@ main{
   background: #0a69c2;
 }
 #clear{
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: bold;
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  margin: -40px 0 0 38px;
+  margin: -40px 0 0 30px;
   color: #fff;
   background: #ff7700;
   border: none;
@@ -134,7 +135,7 @@ main{
 }
 .topoTabela{
   flex: 60%;
-  margin: 0 20%;
+  margin: 18% 20% 0;
   background: #0a69c2;
   color: #fff;
   font-size: 22px;
@@ -153,21 +154,19 @@ table tr td{
   padding: 2px;
 }
 #resultado{
-  margin: 20px;
-  height: 70px;
-  width: 200px;
-  position: relative;
-  left: 18.2%;
+  height: 3em;
+  width: 28em;
+  margin: 1.5% 30%;
+  text-align: left;
+  background: #ff7700;
+  border-radius: 1em;
 }
 #resultado p{
-  font-size: 28px;
+  font-size: 1.5em;
   font-weight: bold;
   color: #fff;
-  background: #ff7700;
-  width: 430px;
-  margin: 0 50%;
-  padding: 20px 15px 15px 0;
-  border-radius: 20px;
+  margin: 0 10%;
+  padding: 0.3em 0;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

@@ -39,7 +39,7 @@ function calculateIMC(){
     classification = 'Abaixo do peso'
   }
 
-  result.innerHTML = `Seu IMC: ${imc} (${classification})`;
+  result.innerHTML = `${imc} (${classification})`;
 }
 
 
