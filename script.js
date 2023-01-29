@@ -1,14 +1,16 @@
 let a = document.getElementById("a");
 let p = document.getElementById("p");
+let resultado = document.getElementById('resultado');
 
-document.getElementById("submit").addEventListener("click", validadeForm);
+document.getElementById("submit").addEventListener("click", validateForm);
 
-function validadeForm(){
+function validateForm(){
   if(a.value == '' || p.value == ''){
-      alert("Todos os campos são requeridos!");
-      document.getElementById("submit").removeEventListener("click", calculateIMC);
+    alert("Todos os campos são requeridos!");
+    document.getElementById("submit").removeEventListener("click", calculateIMC);
   } else{
-      calculateIMC();
+    resultado.style.opacity = "1";
+    calculateIMC();
   }
 }
 
