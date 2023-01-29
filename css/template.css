@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fffddd;
+}
+p{
+  color: rgb(89,85,82);
+}
+h1{
+  color: #136cb0;
+  font-size: 3rem;
+  margin: .9rem 0 .8rem;
+}
+.head{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 5rem;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 40%;
+  height: 100%;
+  flex: 50%;
+}
+.details h2{
+  width: 35rem;
+  background: #0a69c2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  padding: 0.3rem 0;
+}
+.details p{
+  font-size: 1.1rem;
+  margin: .8rem 0 2rem;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  display: flex;
+  gap: .4rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.divF, .divB{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.altura, .peso{
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  color: #136cb0;
+  font-size: 0.9rem;
+}
+label{
+  font-weight: bold;
+}
+input{
+  width: 9.5rem;
+  height: 2.2rem;
+  border-radius: .5rem;
+  border: 1.5px solid #0a69c2;
+  outline: none;
+  padding: 0 0 0 .4rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+}
+#submit, #clear{
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 9.5rem;
+  height: 2.2rem;
+  border-radius: .5rem;
+  color: #fff;  
+  border: none;
+  cursor: pointer;
+}
+#submit{
+  background: #01519b;
+}
+#clear{  
+  background: #ff7700;  
+}
+#submit:hover{  
+  background: #0a69c2;
+}
+#clear:hover{  
+  background: #f48320;
+}
+.topoTabela{
+  background: #0a69c2;
+  margin: 1rem 0 .2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  padding: .5rem 0;
+}
+th{
+  color: #136cb0;
+}
+td, th{
+  border-bottom: 1px solid rgb(171, 171, 171);
+  padding: .2rem;
+}
+#resultado{
+  position: fixed;
+  bottom: .1rem;
+  right: .1rem;
+  height: 2.5rem;
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ff7700;
+  border-radius: .5rem;
+  transition: all .5s ease; 
+}
+#resultado p{
+  font-size: 1.5rem;
+  color: #fff;
+}
+#result{
+  font-weight: bold;
+}

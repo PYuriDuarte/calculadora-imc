@@ -1,0 +1,95 @@
+@media screen and (max-width:1024px){
+  .head{
+    gap: 3rem;
+  }
+  .details h2{
+    width: 28rem;    
+  }
+  .details p{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:768px){
+  .head{
+    gap: 2rem;
+  }
+  .details h2{
+    width: 20rem;    
+  }
+  .details p span{
+    display: none;
+  }
+  .telaMenor{
+    display: inline !important;
+  }
+}
+@media screen and (max-width:425px){
+  h1{
+    font-size: 2rem;
+  }
+  .head{
+    gap: .2rem;
+  }
+  .details h2{
+    font-size: 1.2rem;
+    width: 12rem;    
+  }
+  .details h2 span{
+    display: none;   
+  }
+  .details p{
+    font-size: .8rem;
+  }
+  p{
+    max-width: 20rem;
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width:375px){
+  h1{
+    font-size: 2rem;
+  }
+  .head{
+    gap: .2rem;
+  }
+  .details h2{
+    font-size: 1rem;
+    width: 10rem;    
+  }  
+  .details p{
+    font-size: .7rem;
+  }
+  p{
+    max-width: 20rem;
+    font-size: .7rem;
+  }
+  .divF, .divB{    
+    gap: 2rem;
+  }
+}
+@media screen and (max-width:320px){   
+  .details h2{
+    font-size: 1rem;
+    width: 9rem;    
+  }
+  .details p{
+    font-size: .7rem;
+  }
+  p{
+    max-width: 18rem;
+    font-size: .7rem;
+  }
+  form{
+    gap: .4rem;
+  }
+  .divF, .divB{    
+    gap: 1rem;
+  }
+  .altura, .peso{
+    font-size: .8rem;
+  }
+  input, #submit, #clear{
+    width: 9rem;
+    height: 2rem;
+  }
+}

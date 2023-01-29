@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/midiaQ.css">
+  <link rel="stylesheet" href="./css/template.css">
+  <link rel="stylesheet" href="./css/midiaQuery.css">
   <title>IMC</title>
 </head>
 <body>
@@ -15,48 +15,46 @@
 
     <div class="head">
     
-      <div class="sign">
-        <h2>Significado de IMC</h2>
-        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela <span>Organização Mundial de Saúde</span><span class="telaMenor">OMS</span> para calcular o peso ideal de cada pessoa.</p>
+      <div class="details sign">
+        <h2>Significado <span>de IMC</span></h2>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela <span class="telaMenor">OMS </span><span>(Organização Mundial de Saúde)</span> para calcular o peso ideal de cada pessoa.</p>
       </div>
 
-      <div class="imc">
-        <h2>Cálculo do IMC</h2>
+      <div class="details imc">
+        <h2>Cálculo <span>do IMC</span></h2>
         <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.<span>Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</span></p>
       </div>
     
     </div>
 
     <p>Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.</p>
-    <p style="color: rgb(222, 40, 40);" class="aviso">Importante: siga os exemplos e use pontos como separadores.</p>
+    <p style="color: rgb(222, 40, 40); margin: .4rem 0 .8rem;" class="aviso">Importante: siga os exemplos e use pontos como separadores.</p>
 
   </header>
 
   <main>
-    <div class="dados">
-      <div>
+    <form>      
+      <div class="divF">
         <div class="altura">
           <label for="a">Altura (cm)</label>
           <input placeholder="Metros" type="number" id="a" autocomplete="off" onfocus="this.value='';" required>  
         </div>
-
+        
         <div class="peso">
           <label for="p">Peso (kg)</label>
           <input placeholder="Quilos" type="number" id="p" autocomplete="off" onfocus="this.value='';" required>
         </div>
       </div>
 
-      <div>
-        <button type="button" class="calc" id="submit">Calcular</button>
+      <div class="divB">
+        <button type="button" id="submit">Calcular</button>
       
-        <button type="button" class="limp" id="clear">Limpar</button>
+        <button type="button" id="clear">Limpar</button>
       </div>
-    </div>
-
-    <div class="topoTabela">
-      <p>VEJA A TABELA DO IMC</p>
-    </div>
-
+    </form>
+    
+    <p class="topoTabela">VEJA A TABELA DO IMC</p>
+    
     <table>
       <tr id="result_calc1">
         <th>IMC</th>
@@ -92,7 +90,7 @@
   </main>
 
   <div id="resultado">
-    <p>Seu IMC:<span id="result"></span></p>
+    <p>Seu IMC: <span id="result"></span></p>
   </div>
 
   <script src="script.js"></script>
